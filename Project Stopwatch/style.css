@@ -1,0 +1,89 @@
+* {
+  /*seletor universal,  ou seja, seleciona todos os elementos HTML em uma página*/
+  box-sizing: border-box; /*altera para um modelo de caixa padrão*/
+  margin: 0;
+  padding: 0; /*definição padrão para evitar espaçamentos indesejados*/
+  font-family: sans-serif;
+}
+header {
+  display: flex; /**/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding: 6px;
+}
+
+body {
+  position: relative;
+}
+:root {
+  /*seletor especial que reprexsenta o elemento raiz do documento HTML, é usada para definir variaveis CSS customizadas*/
+  --stopwatch-primary-color: #e63946;
+  --stopwatch-primary-shade: #a8dadc;
+  --stopwatch-secondary-color: #fcd5ce;
+  --stopwatch-secondary-shade: #3c6e71;
+  --stopwatch-light-color: #f8edeb;
+  --body-background-color: #f1faee; /*defini errado*/
+}
+
+@media (max-width: 600px) {
+  /*media é um condicionante no css, ele permite que você aplique estilos diferentes a um elemento dependendo do dispositivo*/
+  :root {
+    /*ou seja, enquanto no celular uma estrutura seria mais bonita, prática, no computador seria outra*/
+    font-size: 10px;
+  }
+}
+
+button {
+  all: unset; /*maneira mais rápida de definir as prpriedades de um elemento para seus valores padrão. Isso significa que qualquer estilo que tenha sido colocado*/
+  cursor: pointer;
+  border: 2px solid var(--stopwatch-light-color);
+  padding: 4px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.secondary-button {
+  background-color: var(--stopwatch-primary-color);
+  color: var(--body-background-color);
+}
+
+button:hover {
+  background-color: var(--stopwatch-secondary-shade);
+}
+
+button.secondary-button:hover {
+  background-color: var(--stopwatch-primary-shade);
+}
+
+button:focus {
+  border: 2px solid #000;
+}
+
+body {
+  display: flex; /*forma de centralizar a div/section*/
+  justify-content: center;
+  align-items: center;
+  height: 80dvh;
+  background-color: var(--stopwatch-secondary-color);
+  font-size: 3rem;
+}
+
+#stopwatch-wrapper {
+  background-color: var(--stopwatch-light-color);
+  padding: 2rem 3rem 3rem;
+  border-radius: 10px;
+}
+
+#stopwatch-display {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 23px;
+  text-align: center;
+}
+
+h4 {
+  margin-left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 0 2px 2px #000;
+}
