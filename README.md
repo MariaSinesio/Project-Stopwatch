@@ -1,6 +1,6 @@
 ## Project-Stopwatch
 
-Um simples, estiloso e funcional cronômetro feito com **HTML**, **CSS** e **JavaScript**. Feito com o intuito de testar meu conhecimento em JS, além de reforçar minha lógica de programação, e bricar um pouco com design. 
+Um simples, estiloso e funcional cronômetro feito com **HTML**, **CSS** e **JavaScript**. Feito com o intuito de testar meu conhecimento em JS, além de reforçar minha lógica de programação, e brincar um pouco com CSS.
 
 ### Funcionalidades
 
